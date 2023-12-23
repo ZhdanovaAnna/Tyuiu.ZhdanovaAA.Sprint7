@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 using Tyuiu.ZhdanovaAA.Sprint7.Project.V9.Lib;
@@ -105,10 +106,10 @@ namespace WindowsFormsApp1
                     data += string.Join(";", cells.Select(cell => cell.Value).ToArray());
                     data += Environment.NewLine;
                 }
-                File.WriteAllText(filename, data);
+                File.WriteAllText(filename, data, Encoding.Default);
                 MessageBox.Show("Файл сохранен", "Выполнено", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
+
         }
 
         private void comboBoxHeaders_ZAA_SelectedValueChanged(object sender, EventArgs e)

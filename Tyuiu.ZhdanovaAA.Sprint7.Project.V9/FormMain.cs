@@ -1,26 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Tyuiu.ZhdanovaAA.Sprint7.Project.V9.Lib;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormMain : Form
+    public partial class FormMain_ZAA : Form
     {
-        List<DataGridViewRow> dataGridViewRowsOriginals = new List<DataGridViewRow>();
-        List<DataGridViewRow> dataGridViewRowsSearched = new List<DataGridViewRow>();
+        public List<DataGridViewRow> dataGridViewRowsOriginals = new List<DataGridViewRow>();
+        public List<DataGridViewRow> dataGridViewRowsSearched = new List<DataGridViewRow>();
+        public List<string> dataGridViewheaders = new List<string>();
         DataService ds = new DataService();
 
-        public FormMain()
+        public FormMain_ZAA()
         {
             InitializeComponent();
             ClearDatagrid();
@@ -33,6 +29,7 @@ namespace WindowsFormsApp1
             dataGridViewData_ZAA.Columns.Clear();
             comboBoxHeaders_ZAA.Items.Clear();
             comboBoxHeadersStatistic_ZAA.Items.Clear();
+            dataGridViewheaders.Clear();
             comboBoxHeaders_ZAA.SelectedValue = comboBoxHeadersStatistic_ZAA.SelectedValue = null;
             buttonStatisticSearch_ZAA.Enabled = buttonSearchLine_ZAA.Enabled = false;
         }
@@ -43,11 +40,12 @@ namespace WindowsFormsApp1
             if(openFileDialog_ZAA.ShowDialog() == DialogResult.OK)
             {
                 ClearDatagrid();
-                using (StreamReader f = new StreamReader(openFileDialog_ZAA.FileName))
+                try
+                {
+                    using (StreamReader f = new StreamReader(openFileDialog_ZAA.FileName))
                 {
                     string s;
-                    try
-                    {
+                    
                         if (MessageBox.Show("В Вашем файле присутствуют заголовки?", "Вопрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             foreach (string column in f.ReadLine().Split(';'))
@@ -55,6 +53,7 @@ namespace WindowsFormsApp1
                                 dataGridViewData_ZAA.Columns.Add(column, column);
                                 comboBoxHeaders_ZAA.Items.Add(column);
                                 comboBoxHeadersStatistic_ZAA.Items.Add(column);
+                                dataGridViewheaders.Add(column);
                             }
                         }
                         else
@@ -77,12 +76,12 @@ namespace WindowsFormsApp1
                         }
                         //dataGridViewRowsOriginals = dataGridViewData_ZAA.Rows.OfType<DataGridViewRow>().ToList();
                     }
-                    catch
-                    {
-                        MessageBox.Show("Произошла ошибка чтения данных из файла.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        ClearDatagrid();
-                        dataGridViewRowsOriginals.Clear();
-                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Произошла ошибка чтения данных из файла.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ClearDatagrid();
+                    dataGridViewRowsOriginals.Clear();
                 }
             }
         }
@@ -193,9 +192,9 @@ namespace WindowsFormsApp1
                     result = ds.GetAverageColumn(list).ToString();
                     break;
                 case "Количество упоминаний":
-                    if (comboBoxSearchStatistic_ZAA.Text == "" || comboBoxSearchStatistic_ZAA.Text == null)
+                    if (textBoxSearchStatistic_ZAA.Text == "" || textBoxSearchStatistic_ZAA.Text == null)
                         return;
-                    result = ds.GetCountTargetColumn(list, comboBoxSearchStatistic_ZAA.Text).ToString();
+                    result = ds.GetCountTargetColumn(list, textBoxSearchStatistic_ZAA.Text).ToString();
                     break;
                 case "Минимальное значение":
                     result = ds.GetMinValueColumn(list).ToString();
@@ -208,9 +207,27 @@ namespace WindowsFormsApp1
             textBoxStatisticResult_ZAA.Text = action + " по полю " + "\"" + header + "\" ";
             if (action == "Количество упоминаний")
             {
-                textBoxStatisticResult_ZAA.Text += "по значению " + "\"" + comboBoxSearchStatistic_ZAA.Text + "\" ";
+                textBoxStatisticResult_ZAA.Text += "по значению " + "\"" + textBoxSearchStatistic_ZAA.Text + "\" ";
             }
             textBoxStatisticResult_ZAA.Text += ": " + result;
+        }
+
+        private void buttonOpenFormStatistic_ZAA_Click(object sender, EventArgs e)
+        {
+            FormStatistics_ZAA formStatistics = new FormStatistics_ZAA(this);
+            formStatistics.Show();
+        }
+
+        private void buttonOpenInfo_ZAA_Click(object sender, EventArgs e)
+        {
+            FormInfo_ZAA formInfo = new FormInfo_ZAA();
+            formInfo.ShowDialog();
+        }
+
+        private void buttonInstructions_ZAA_Click(object sender, EventArgs e)
+        {
+            FormInstruction_ZAA formHelp = new FormInstruction_ZAA();
+            formHelp.Show();
         }
     }
 }

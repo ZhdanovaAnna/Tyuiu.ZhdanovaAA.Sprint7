@@ -46,7 +46,11 @@ namespace Tyuiu.ZhdanovaAA.Sprint7.Project.V9.Lib
         }
         public int GetCountTargetColumn(List<object> data, object target)
         {
-            return data.Where(x => x.ToString() == target.ToString()).Count();  
+            return data.Where(x => x.ToString().Contains(target.ToString())).Count();  
+        }
+        public int GetCountColumn(List<object> data)
+        {
+            return data.Count();
         }
 
         public double GetAverageColumn(List<object> data)

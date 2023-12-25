@@ -127,10 +127,18 @@ namespace WindowsFormsApp1
         private void buttonSearchLine_ZAA_Click(object sender, EventArgs e)
         {
             string searchline = textBoxSearchline_ZAA.Text;
+            if (dataGridViewRowsSearched.Count()==0)
+            {
+                dataGridViewRowsOriginals.Clear();
+                foreach (var row in dataGridViewData_ZAA.Rows.OfType<DataGridViewRow>().ToList())
+                {
+                    dataGridViewRowsOriginals.Add(row);
+                }
+            }
+            
             dataGridViewRowsSearched.Clear();
             dataGridViewRowsSearched = ds.GetSearchRows(dataGridViewData_ZAA.Rows.OfType<DataGridViewRow>().ToList(), 
-                                                        comboBoxHeaders_ZAA.SelectedItem.ToString(), 
-                                                        searchline);
+                                                        comboBoxHeaders_ZAA.SelectedItem.ToString(), searchline);
             dataGridViewData_ZAA.Rows.Clear();
             foreach(var row in dataGridViewRowsSearched)
             {

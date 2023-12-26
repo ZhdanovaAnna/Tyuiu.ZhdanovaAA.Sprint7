@@ -76,9 +76,9 @@
             this.groupBoxMenu_ZAA.Controls.Add(this.buttonOpenInfo_ZAA);
             this.groupBoxMenu_ZAA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxMenu_ZAA.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxMenu_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMenu_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxMenu_ZAA.Name = "groupBoxMenu_ZAA";
-            this.groupBoxMenu_ZAA.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxMenu_ZAA.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxMenu_ZAA.Size = new System.Drawing.Size(1260, 106);
             this.groupBoxMenu_ZAA.TabIndex = 0;
             this.groupBoxMenu_ZAA.TabStop = false;
@@ -87,7 +87,7 @@
             // buttonSave_ZAA
             // 
             this.buttonSave_ZAA.Location = new System.Drawing.Point(116, 23);
-            this.buttonSave_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSave_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave_ZAA.Name = "buttonSave_ZAA";
             this.buttonSave_ZAA.Size = new System.Drawing.Size(107, 28);
             this.buttonSave_ZAA.TabIndex = 2;
@@ -99,7 +99,7 @@
             // buttonOpen_ZAA
             // 
             this.buttonOpen_ZAA.Location = new System.Drawing.Point(8, 23);
-            this.buttonOpen_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOpen_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpen_ZAA.Name = "buttonOpen_ZAA";
             this.buttonOpen_ZAA.Size = new System.Drawing.Size(100, 28);
             this.buttonOpen_ZAA.TabIndex = 1;
@@ -113,7 +113,7 @@
             this.buttonInstructions_ZAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonInstructions_ZAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInstructions_ZAA.Location = new System.Drawing.Point(1095, 23);
-            this.buttonInstructions_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonInstructions_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonInstructions_ZAA.Name = "buttonInstructions_ZAA";
             this.buttonInstructions_ZAA.Size = new System.Drawing.Size(43, 28);
             this.buttonInstructions_ZAA.TabIndex = 0;
@@ -126,7 +126,7 @@
             // 
             this.buttonOpenInfo_ZAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOpenInfo_ZAA.Location = new System.Drawing.Point(1145, 23);
-            this.buttonOpenInfo_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOpenInfo_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpenInfo_ZAA.Name = "buttonOpenInfo_ZAA";
             this.buttonOpenInfo_ZAA.Size = new System.Drawing.Size(100, 28);
             this.buttonOpenInfo_ZAA.TabIndex = 0;
@@ -149,9 +149,9 @@
             this.groupBoxData_ZAA.Controls.Add(this.labelSearchline_ZAA);
             this.groupBoxData_ZAA.Controls.Add(this.textBoxSearchline_ZAA);
             this.groupBoxData_ZAA.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxData_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxData_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxData_ZAA.Name = "groupBoxData_ZAA";
-            this.groupBoxData_ZAA.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxData_ZAA.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxData_ZAA.Size = new System.Drawing.Size(1252, 448);
             this.groupBoxData_ZAA.TabIndex = 0;
             this.groupBoxData_ZAA.TabStop = false;
@@ -161,7 +161,7 @@
             // 
             this.buttonDeleteRow_ZAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDeleteRow_ZAA.Location = new System.Drawing.Point(1125, 22);
-            this.buttonDeleteRow_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDeleteRow_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDeleteRow_ZAA.Name = "buttonDeleteRow_ZAA";
             this.buttonDeleteRow_ZAA.Size = new System.Drawing.Size(100, 28);
             this.buttonDeleteRow_ZAA.TabIndex = 6;
@@ -179,7 +179,7 @@
             this.dataGridViewData_ZAA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewData_ZAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewData_ZAA.Location = new System.Drawing.Point(13, 60);
-            this.dataGridViewData_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewData_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewData_ZAA.Name = "dataGridViewData_ZAA";
             this.dataGridViewData_ZAA.RowHeadersWidth = 51;
             this.dataGridViewData_ZAA.Size = new System.Drawing.Size(817, 380);
@@ -188,7 +188,7 @@
             // buttonReset_ZAA
             // 
             this.buttonReset_ZAA.Location = new System.Drawing.Point(504, 23);
-            this.buttonReset_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReset_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReset_ZAA.Name = "buttonReset_ZAA";
             this.buttonReset_ZAA.Size = new System.Drawing.Size(100, 28);
             this.buttonReset_ZAA.TabIndex = 4;
@@ -201,7 +201,7 @@
             // 
             this.buttonSearchLine_ZAA.Enabled = false;
             this.buttonSearchLine_ZAA.Location = new System.Drawing.Point(421, 23);
-            this.buttonSearchLine_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSearchLine_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSearchLine_ZAA.Name = "buttonSearchLine_ZAA";
             this.buttonSearchLine_ZAA.Size = new System.Drawing.Size(75, 28);
             this.buttonSearchLine_ZAA.TabIndex = 1;
@@ -224,7 +224,7 @@
             // 
             this.comboBoxHeaders_ZAA.FormattingEnabled = true;
             this.comboBoxHeaders_ZAA.Location = new System.Drawing.Point(61, 23);
-            this.comboBoxHeaders_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxHeaders_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxHeaders_ZAA.Name = "comboBoxHeaders_ZAA";
             this.comboBoxHeaders_ZAA.Size = new System.Drawing.Size(160, 27);
             this.comboBoxHeaders_ZAA.TabIndex = 2;
@@ -244,7 +244,7 @@
             // textBoxSearchline_ZAA
             // 
             this.textBoxSearchline_ZAA.Location = new System.Drawing.Point(289, 25);
-            this.textBoxSearchline_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSearchline_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearchline_ZAA.Name = "textBoxSearchline_ZAA";
             this.textBoxSearchline_ZAA.Size = new System.Drawing.Size(123, 27);
             this.textBoxSearchline_ZAA.TabIndex = 0;
@@ -264,9 +264,9 @@
             this.groupBoxStatistic_ZAA.Controls.Add(this.comboBoxStatisticAction_ZAA);
             this.groupBoxStatistic_ZAA.Controls.Add(this.comboBoxHeadersStatistic_ZAA);
             this.groupBoxStatistic_ZAA.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxStatistic_ZAA.Name = "groupBoxStatistic_ZAA";
-            this.groupBoxStatistic_ZAA.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxStatistic_ZAA.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxStatistic_ZAA.Size = new System.Drawing.Size(429, 448);
             this.groupBoxStatistic_ZAA.TabIndex = 1;
             this.groupBoxStatistic_ZAA.TabStop = false;
@@ -276,10 +276,10 @@
             // 
             this.buttonOpenFormStatistic_ZAA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOpenFormStatistic_ZAA.Location = new System.Drawing.Point(117, 385);
-            this.buttonOpenFormStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonOpenFormStatistic_ZAA.Location = new System.Drawing.Point(117, 361);
+            this.buttonOpenFormStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOpenFormStatistic_ZAA.Name = "buttonOpenFormStatistic_ZAA";
-            this.buttonOpenFormStatistic_ZAA.Size = new System.Drawing.Size(212, 55);
+            this.buttonOpenFormStatistic_ZAA.Size = new System.Drawing.Size(212, 79);
             this.buttonOpenFormStatistic_ZAA.TabIndex = 10;
             this.buttonOpenFormStatistic_ZAA.Text = "Открыть статистику\r\nс диаграммами";
             this.toolTip_ZAA.SetToolTip(this.buttonOpenFormStatistic_ZAA, "Открыть окно статистики с диаграммой");
@@ -300,7 +300,7 @@
             // textBoxSearchStatistic_ZAA
             // 
             this.textBoxSearchStatistic_ZAA.Location = new System.Drawing.Point(126, 68);
-            this.textBoxSearchStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSearchStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearchStatistic_ZAA.Name = "textBoxSearchStatistic_ZAA";
             this.textBoxSearchStatistic_ZAA.Size = new System.Drawing.Size(160, 27);
             this.textBoxSearchStatistic_ZAA.TabIndex = 7;
@@ -312,18 +312,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxStatisticResult_ZAA.Location = new System.Drawing.Point(9, 225);
-            this.textBoxStatisticResult_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxStatisticResult_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxStatisticResult_ZAA.Multiline = true;
             this.textBoxStatisticResult_ZAA.Name = "textBoxStatisticResult_ZAA";
             this.textBoxStatisticResult_ZAA.ReadOnly = true;
-            this.textBoxStatisticResult_ZAA.Size = new System.Drawing.Size(405, 152);
+            this.textBoxStatisticResult_ZAA.Size = new System.Drawing.Size(405, 128);
             this.textBoxStatisticResult_ZAA.TabIndex = 8;
             // 
             // buttonStatisticSearch_ZAA
             // 
             this.buttonStatisticSearch_ZAA.Enabled = false;
             this.buttonStatisticSearch_ZAA.Location = new System.Drawing.Point(152, 190);
-            this.buttonStatisticSearch_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonStatisticSearch_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStatisticSearch_ZAA.Name = "buttonStatisticSearch_ZAA";
             this.buttonStatisticSearch_ZAA.Size = new System.Drawing.Size(100, 28);
             this.buttonStatisticSearch_ZAA.TabIndex = 6;
@@ -358,7 +358,7 @@
             // 
             this.comboBoxStatisticAction_ZAA.FormattingEnabled = true;
             this.comboBoxStatisticAction_ZAA.Location = new System.Drawing.Point(126, 155);
-            this.comboBoxStatisticAction_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxStatisticAction_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxStatisticAction_ZAA.Name = "comboBoxStatisticAction_ZAA";
             this.comboBoxStatisticAction_ZAA.Size = new System.Drawing.Size(160, 27);
             this.comboBoxStatisticAction_ZAA.TabIndex = 4;
@@ -369,7 +369,7 @@
             // 
             this.comboBoxHeadersStatistic_ZAA.FormattingEnabled = true;
             this.comboBoxHeadersStatistic_ZAA.Location = new System.Drawing.Point(126, 31);
-            this.comboBoxHeadersStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxHeadersStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxHeadersStatistic_ZAA.Name = "comboBoxHeadersStatistic_ZAA";
             this.comboBoxHeadersStatistic_ZAA.Size = new System.Drawing.Size(160, 27);
             this.comboBoxHeadersStatistic_ZAA.TabIndex = 3;
@@ -396,7 +396,7 @@
             this.panelMenu_ZAA.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenu_ZAA.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelMenu_ZAA.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu_ZAA.Name = "panelMenu_ZAA";
             this.panelMenu_ZAA.Size = new System.Drawing.Size(1260, 106);
             this.panelMenu_ZAA.TabIndex = 2;
@@ -407,7 +407,7 @@
             this.panelData_ZAA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelData_ZAA.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelData_ZAA.Location = new System.Drawing.Point(0, 106);
-            this.panelData_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelData_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.panelData_ZAA.Name = "panelData_ZAA";
             this.panelData_ZAA.Size = new System.Drawing.Size(1260, 448);
             this.panelData_ZAA.TabIndex = 3;
@@ -418,7 +418,7 @@
             this.panelStatistic_ZAA.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelStatistic_ZAA.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelStatistic_ZAA.Location = new System.Drawing.Point(831, 106);
-            this.panelStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelStatistic_ZAA.Margin = new System.Windows.Forms.Padding(4);
             this.panelStatistic_ZAA.Name = "panelStatistic_ZAA";
             this.panelStatistic_ZAA.Size = new System.Drawing.Size(429, 448);
             this.panelStatistic_ZAA.TabIndex = 4;
@@ -431,7 +431,7 @@
             this.Controls.Add(this.panelStatistic_ZAA);
             this.Controls.Add(this.panelData_ZAA);
             this.Controls.Add(this.panelMenu_ZAA);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1275, 591);
             this.Name = "FormMain_ZAA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
